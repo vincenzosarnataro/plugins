@@ -86,7 +86,7 @@ class UrlLauncher {
                     WebViewActivity.createIntent(
                             activity, url, enableJavaScript, enableDomStorage, headersBundle);
         } else {
-            String type = "text/html";
+            String type = null;
             if (url.contains(".pdf"))
                 type = "application/pdf";
             launchIntent =
